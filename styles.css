@@ -21,14 +21,15 @@ body {
 
 .panel {
     background-size: cover;
+    /* background-size: auto 100%; */
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
-    border-radius: 50px;
+    border-radius: 40px;
     color: white;
     cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
+    flex: 0.7;
+    margin: 5px;
     position: relative;
     transition: flex 0.8s ease-in;
 }
@@ -38,4 +39,24 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 4;
+}
+
+.panel.active.h3 {
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
 }
