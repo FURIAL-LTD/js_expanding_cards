@@ -1,3 +1,11 @@
-# JavaScript Project Starter
+# JavaScript Expanding Cards
 
-This is just a JavaScript Project Starter that I have created to speed things up when doing small projects.
+This is a simple JS project where I created five containers, each with a picture from my unsplash portfolio. Clickling on one of the containers or "cards", highlights it as active and reveals it's picture.
+
+### Technologies used:
+* JavaScript
+* HTML
+* CSS
+
+### Bugs
+Media query is not hidding the containers.
